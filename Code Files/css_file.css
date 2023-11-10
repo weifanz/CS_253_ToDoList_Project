@@ -1,5 +1,17 @@
 body {
     background-color: #fff;
-  }
+}
 
-h1 {text-align: center;}
+.display {
+    background-color: pink;
+    padding: 10px;
+}
+
+.add_box {
+    background-color: plum;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
