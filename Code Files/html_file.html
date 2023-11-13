@@ -16,13 +16,13 @@
             <table id="weekly">
                 <thead>
                     <tr>
+                        <th>Sunday</th>
                         <th>Monday</th>
                         <th>Tuesday</th>
                         <th>Wednesday</th>
                         <th>Thursday</th>
                         <th>Friday</th>
                         <th>Saturday</th>
-                        <th>Sunday</th>
                     </tr>
                 </thead>
             </table>
@@ -44,7 +44,7 @@
                 <form id = 'add_task'>
                     <label for = 'add_task'>Add your task:  </label>
                     <input id = 'add_task' type="text" name="add_task">
-                    <button type = 'submit' id = 'Add_task_btn'> Add </button>
+                    <button type = 'submit' id = 'Add_task_btn' onclick='addToColumn()'> Add </button>
                 </form>
             </div>
         </div>

@@ -8,6 +8,8 @@ body {
     top: 48%;
     left: 50%;
     transform: translate(-50%, -60%);
+    padding: 10px;
+    border-radius: 10px 50px 10px 50px;
     position: absolute;
     background-color: pink;
 }
@@ -18,6 +20,8 @@ body {
     top: 80%;
     left: 10%;
     transform: translate(-13%, -20%);
+    padding: 10px;
+    border-radius: 30px 5px 30px 5px;
     position: absolute;
     background-color: plum;
 }
