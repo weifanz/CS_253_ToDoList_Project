@@ -5,11 +5,13 @@ body {
 .display {
     background-color: pink;
     padding: 10px;
+    border-radius: 10px 50px 10px 50px;
 }
 
 .add_box {
     background-color: plum;
     padding: 10px;
+    border-radius: 30px 5px 30px 5px;
 }
 
 h1 {
