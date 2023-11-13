@@ -33,39 +33,28 @@
         <h1>ToDo List</h1>
 
         <div class="display">
-            <h1>Weekly Calendar</h1>
-
-            <table id="week">
-                <thead>
-                    <tr>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
-                    </tr>
-                </thead>
-            </table>
 
         </div>
 
         <div class="add_box">
-
-            <div class="input_day"> Select day: 
-                <input type="text" name="tasks" id="1">
+            <br>
+            <div class = "input_day"> 
+                <form id = 'add_day'>
+                    <label for = 'add_day'>Select day:</label>
+                    <input id = 'add_day' type="text" name="add_day">
+                    <button type = 'submit' id = 'select_day_btn'> Select </button>
+                </form>
             </div>
-            
-            <button class="select"> Select </button>
 
+            <br>
 
-            <div class="input_task"> Add your task: 
-                <input type="text" name="tasks" id="2"> 
+            <div class = "input_task">
+                <form id = 'add_task'>
+                    <label for = 'add_task'>Add your task:  </label>
+                    <input id = 'add_task' type="text" name="add_task">
+                    <button type = 'submit' id = 'Add_task_btn'> Add </button>
+                </form>
             </div>
-            
-            <button class="add_task"> Add </button>
-
         </div>
 
         <ul id="tasks">
