@@ -3,17 +3,29 @@ body {
 }
 
 .display {
+    height: 60%;
+    width: 90%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    position: absolute;
     background-color: pink;
-    padding: 10px;
-    border-radius: 10px 50px 10px 50px;
 }
 
 .add_box {
+    height: 20%;
+    width: 40%;
+    top: 80%;
+    left: 10%;
+    transform: translate(-13%, -20%);
+    position: absolute;
     background-color: plum;
-    padding: 10px;
-    border-radius: 30px 5px 30px 5px;
 }
 
 h1 {
+    text-align: center;
+}
+
+.weekly {
     text-align: center;
 }
