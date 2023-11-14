@@ -22,7 +22,9 @@ const add_task = document.getElementById('add_task');
             listTask.textContent = content;
             
             parent.appendChild(listTask);
-        } 
+        } else {
+            alert("Please add your task.");
+        }
         
         add_task.value = '';
     });
