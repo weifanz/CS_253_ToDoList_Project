@@ -11,9 +11,10 @@ task_btn.addEventListener('Click', () => {
     * task_btn.addEventListener is a function that listens for a click and runs the function
     * The function will take in the input and store it in the correct list
     */
-    if (add_day.toLowerCase() == 'sunday') {
-        const listTask = document.createElement('li');
-        var content = document.getElementById(add_task).value; // Getting user input 
+    var day = document.getElementById(add_day).value;
+    var content = document.getElementById(add_task).value; // Getting user input
+    if (day.toLowerCase() == 'sunday') {
+        const listTask = document.createElement('li'); 
         listTask.value = content;
         sun_tasks.appendChild(listTask);
     }
