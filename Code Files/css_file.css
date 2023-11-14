@@ -43,6 +43,7 @@ table {
 }
 
 tr { 
+    text-align: center;
     border: none; 
 }
 
@@ -54,3 +55,7 @@ th, td {
 th:last-child, td:last-child {
     border-right: none; /* Remove border from the last column */
   }
+
+li {
+    text-align: left;
+}

@@ -62,24 +62,35 @@
         <div class="add_box">
             <br>
             <div class = "input_day"> 
-                <form id = 'add_day'>
+                <form>
                     <label for = 'add_day'>Select day:</label>
-                    <input id = 'add_day' type="text" name="add_day">
-                    <button type = 'submit' id = 'select_day_btn'> Select </button>
+                    <select id = 'add_day' name="add_day">
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="sunday">Sunday</option>
+                    </select>
                 </form>
             </div>
 
             <br>
 
             <div class = "input_task">
-                <form id = 'add_task'>
+                <form>
                     <label for = 'add_task'>Add your task:  </label>
-                    <input id = 'add_task' type="text" name="add_task">
-                    <button type = 'submit' id = 'add_task_btn'> Add </button>
+                    <input id = 'add_task' type="text" name="add_task" required>
                 </form>
             </div>
+            
+            <br>
+            <button type = 'submit' id = 'add_task_btn'> Add </button>
         </div>
 
     </body>
+
+    <script src="javascript_file.js"> </script>
 
 </html>
