@@ -3,40 +3,41 @@
 */
 
 // Buttons from html file
-const task_btn = document.querySelector('Add_task_btn');
+const task_btn = document.querySelector('add_task_btn');
 const select_btn = document.querySelector('select_day_btn');
 
-task_btn.addEventListener('Click', () => {
+task_btn.addEventListener('click', () => {
     /*
     * task_btn.addEventListener is a function that listens for a click and runs the function
-    * The function will take in the input and store it in the 
+    * The function will take in the input and store it in the correct list
     */
-    if (add_day == 'sun_tasks') {
-        const listTask = document.createElement('li');
-        sun_tasks.appendChild(listTask);
-        var content = document.getElementById(add_task).value;
-        
+    var day = document.getElementById(add_day).value;
+    var content = document.getElementById(add_task).value; // Getting user input
+    if (day.toLowerCase() == 'sunday') {
+        const listTask = document.createElement('li'); 
+        listTask.value = content;
+        sunday.appendChild(listTask);
     }
-    else if (add_day == 'mon_tasks') {
-        const listTask = document.createElement('li');
-    }
-    else if (add_day == 'tue_tasks') {
+    else if (add_day.toLowerCase() == 'monday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day == 'wed_tasks') {
+    else if (add_day.toLowerCase() == 'tuesday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day == 'thu_tasks') {
+    else if (add_day.toLowerCase() == 'wednesday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day == 'fri_tasks') {
+    else if (add_day.toLowerCase() == 'thursday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day == 'sat_tasks') {
+    else if (add_day.toLowerCase() == 'friday') {
+        const listTask = document.createElement('li');
+    }
+    else if (add_day.toLowerCase() == 'saturday') {
         const listTask = document.createElement('li');
     }
     else {
-
+        alert("Not a valid day of the week :(");
     }
 });
 
