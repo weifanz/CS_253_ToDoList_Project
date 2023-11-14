@@ -6,7 +6,7 @@
 const task_btn = document.querySelector('add_task_btn');
 const select_btn = document.querySelector('select_day_btn');
 
-task_btn.addEventListener('Click', () => {
+task_btn.addEventListener('click', () => {
     /*
     * task_btn.addEventListener is a function that listens for a click and runs the function
     * The function will take in the input and store it in the correct list
