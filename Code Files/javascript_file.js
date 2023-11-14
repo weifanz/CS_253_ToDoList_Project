@@ -11,28 +11,28 @@ task_btn.addEventListener('Click', () => {
     * task_btn.addEventListener is a function that listens for a click and runs the function
     * The function will take in the input and store it in the correct list
     */
-    if (add_day == 'sunday') {
+    if (add_day.toLowerCase() == 'sunday') {
         const listTask = document.createElement('li');
         var content = document.getElementById(add_task).value; // Getting user input 
         listTask.value = content;
         sun_tasks.appendChild(listTask);
     }
-    else if (add_day.toLowerCase == 'monday') {
+    else if (add_day.toLowerCase() == 'monday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day.toLowerCase == 'tuesday') {
+    else if (add_day.toLowerCase() == 'tuesday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day.toLowerCase == 'wednesday') {
+    else if (add_day.toLowerCase() == 'wednesday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day.toLowerCase == 'thursday') {
+    else if (add_day.toLowerCase() == 'thursday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day.toLowerCase == 'friday') {
+    else if (add_day.toLowerCase() == 'friday') {
         const listTask = document.createElement('li');
     }
-    else if (add_day.toLowerCase == 'saturday') {
+    else if (add_day.toLowerCase() == 'saturday') {
         const listTask = document.createElement('li');
     }
     else {
