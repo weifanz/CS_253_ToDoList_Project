@@ -6,7 +6,7 @@
 const task_btn = document.querySelector('Add_task_btn');
 const select_btn = document.querySelector('select_day_btn');
 
-task_btn.addEventListener('Click', () => {
+Add_task_btn.addEventListener('Click', () => {
     /*
     * task_btn.addEventListener is a function that listens for a click and runs the function
     * The function will take in the input and store it in the correct list
@@ -16,7 +16,7 @@ task_btn.addEventListener('Click', () => {
     if (day.toLowerCase() == 'sunday') {
         const listTask = document.createElement('li'); 
         listTask.value = content;
-        sun_tasks.appendChild(listTask);
+        sunday.appendChild(listTask);
     }
     else if (add_day.toLowerCase() == 'monday') {
         const listTask = document.createElement('li');
