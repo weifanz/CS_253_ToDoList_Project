@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='', static_folder='')
 
 @app.route('/',methods=['GET', 'POST'])
 def home():
-    return render_template('html_file.html')
+    return render_template('index.html')
 
 # Run the server
 if __name__ == "__main__":
