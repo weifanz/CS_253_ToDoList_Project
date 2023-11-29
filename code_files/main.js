@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const task_btn = document.getElementById('add_task_btn');
 const add_day = document.getElementById('add_day');
 const add_task = document.getElementById('add_task');
-
+const deleteBtn = document.getElementById('delete_task_btn');
     task_btn.addEventListener("click", function(event) {
         /*
         * task_btn.addEventListener is a function that listens for a click and runs the function
@@ -29,6 +29,22 @@ const add_task = document.getElementById('add_task');
 
         add_task.value = '';
     });
+
+    /*
+    this function will act as the delete function which will allow the user to remove a specified task
+    */
+deleteBtn.addEventListener("click", function(event){
+  var contentToDelete = add_task.value;
+  var dayToDeleteFrom = add_day.value;
+  var listItems = document.getElementById(dayToDeleteFrom).getElementsByTagName('li');
+
+  for (var i = 0; i < listItems.length; i++){
+    if (listItems[i].textContent === contentToDelete){
+      listItems[i].remove();
+      break; // exit the loop once the task is deleted
+    }
+  }
+})
 
     // Function to handle checkbox state change
     function handleCheckboxChange(checkbox) {
