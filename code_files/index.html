@@ -78,7 +78,7 @@
 
             <br>
 
-            <div class = "input_task">
+            <div class="input_task">
                 <form>
                     <label for = 'add_task'>Add your task:  </label>
                     <input id = 'add_task' type="text" name="add_task" required>
@@ -86,8 +86,49 @@
             </div>
             
             <br>
+
             <button type = 'submit' id = 'add_task_btn'> Add </button>
+        </div>
+
+        <div class="del_box">
+            <br>
+            <div class="del_input_day">
+                <form>
+                    <label for = 'add_day'>Select day:</label>
+                    <select id = 'add_day' name="add_day">
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="sunday">Sunday</option>
+                    </select>
+                </form>
+            </div>
+
+            <br>
+
+            <div class="pick_task">
+                <form>
+                    <label for = 'choose_task'>Select task:</label>
+                    <select id = 'choose_task' name="choose_task">
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="sunday">Sunday</option>
+                    </select>
+                </form>
+
+            </div>
+            
+            <br>
+
             <button type = 'button' id = 'delete_task_btn'> Delete </button>
+
         </div>
 
     </body>
