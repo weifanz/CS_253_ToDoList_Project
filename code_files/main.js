@@ -41,9 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
   * The function will take in the input and store it in the correct list
   */
   var content = addTask.value; // Getting user input
+  let day = addDay.value;
 
-  if (content != "") {
-    let day = addDay.value;
+  // If a task with the same name already exists in that day, display warning.
+  if (tasks.some(task => task.day === day && task.taskContent === content)) {
+    alert("You already have this task on the same day. Please change the name of your task.");
+  }
+  else if (content != "") {
     let task = new Task(day, content);
     tasks.push(task)
 
@@ -55,12 +59,10 @@ document.addEventListener("DOMContentLoaded", function() {
     addTask.value = '';
 
     updateDeleteDropdown();
-    } 
-    
-    else {
-      alert("Please add your task.");
-    }
-
+  } 
+  else {
+    alert("Please add your task.");
+  }
     });
 
     // Delete Button Event Listener
